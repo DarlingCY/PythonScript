@@ -20,12 +20,11 @@ data = {
     'passwd': passwd
 }
 try:
-    print('开始登录...')
+    print('开始登录')
     response = json.loads(session.post(url=login_url, headers=header, data=data).text)
     print(response['msg'])
     # 进行签到
     result = json.loads(session.post(url=check_url, headers=header).text)
-    print(result['msg'])
     content = result['msg']
     print(content)
     notify.send(title="机场签到", content=content)
