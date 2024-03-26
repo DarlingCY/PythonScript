@@ -1,3 +1,7 @@
+"""
+Name:机场签到
+cron:0 8 * * *
+"""
 import json
 import requests
 import os
