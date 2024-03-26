@@ -1,5 +1,5 @@
 """
-Name:机场签到
+new Env("机场签到");
 cron:0 8 * * *
 """
 import json
